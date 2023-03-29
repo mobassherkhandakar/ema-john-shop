@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Details from "../Details/Details";
 import Pruduct from "../Pruduct/Pruduct";
 import "./Pruducts.css";
 
@@ -25,9 +26,8 @@ const Pruducts = () => {
           ></Pruduct>
         ))}
       </div>
-      <div className="pruduct-details text-center">
-        <h2 className="font-semibold text-2xl">Order Summary</h2>
-        <p>Selected Product: {card.length}</p>
+      <div className="pruduct-details pl-4">
+        <Details card={card}></Details>
       </div>
     </div>
   );
